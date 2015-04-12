@@ -1,6 +1,6 @@
 Bored
 ===
-A little js game project
+A little js game project based on some rooms in the legend of zelda's game serie
 
 Objectives
 ---
@@ -15,3 +15,7 @@ These tools are :
 How to start the game
 ---
 Just open the index.html file and start to play.
+
+TODO
+---
+- Write doc about intalling the dev section
