@@ -4,7 +4,7 @@ A little js game project based on some rooms in the legend of zelda's game serie
 
 Objectives
 ---
-Use a full set of tools that I want to learn.
+Use a set of tools that I want to learn.
 These tools are :
 
  - GruntJS as the file watcher
@@ -16,6 +16,18 @@ How to start the game
 ---
 Just open the index.html file and start to play.
 
+How to contribute or modify
+---
+- Download and install [node.js](https://nodejs.org/)
+- install all the dev dependencies `npm install`
+You are now ready to go !
+
 TODO
 ---
-- Write doc about intalling the dev section
+- Create a map
+- Add cell's status
+- Create a caracter
+- Add a caracter
+- Add interaction between the cells and the caracter
+- Add animations to the caracter & to the cells
+- Generate random maps
