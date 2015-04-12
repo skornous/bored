@@ -18,8 +18,10 @@ Just open the index.html file and start to play.
 
 How to contribute or modify
 ---
+- Fork the repository
 - Download and install [node.js](https://nodejs.org/)
-- install all the dev dependencies `npm install`
+- Install all the dev dependencies :  `npm install`
+
 You are now ready to go !
 
 TODO
