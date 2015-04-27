@@ -85,10 +85,10 @@ module.exports = function(grunt) {
   grunt.registerTask('scriptUp', ['testScripts', 'uglify']);
   grunt.registerTask('styleUp', ['testStyles', 'cssmin']);
 
-  grunt.registerTask('testScripts', ['jshint', 'karma']);
+  grunt.registerTask('testScripts', ['jshint', 'karma:unit:run']);
   grunt.registerTask('testStyles', []);
 
-  grunt.registerTask('build', ['testAll' ,'styleUp', 'scriptUp', 'htmlmin:dist']);
+  grunt.registerTask('build', ['styleUp', 'scriptUp', 'htmlmin:dist']);
   grunt.registerTask('dev', ['styleUp', 'scriptUp', 'htmlmin:dev']);
   grunt.registerTask('default', ['build']);
 };
