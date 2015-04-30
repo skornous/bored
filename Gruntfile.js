@@ -40,7 +40,7 @@ module.exports = function(grunt) {
     watch: {
       js: {
         files: [dev + '*.js'],
-        tasks: ['scriptUp'],
+        tasks: ['testScripts'],
         options: {
           spawn: false,
           livereload: true
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: [dev + '*.css'],
-        tasks: ['styleUp'],
+        tasks: ['testStyles'],
         options: {
           spawn: false,
           livereload: true
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
       },
       karma: {
         files: ['node_modules/jquery/dist/jquery.js', dev + '*.js', 'spec/**/*.js'],
-        tasks: ['karma:unit:run'] //NOTE the :run flag 
+        tasks: ['karma:unit']
       }
     },
     jshint: {

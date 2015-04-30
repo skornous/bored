@@ -9,10 +9,19 @@
 // });
 
 describe("Testing the Map object", function() {
-  var map = new Map();
 
-  it("should have a size", function() {
-    expect(map.getSize()).not.toBe(null);
-    console.log(map.getSize().getDimension());
-  });
+    it("should create a map with a default size of (4, 4)", function(){
+        var map = new Map();
+        expect(map.getSize().equalsTo(new Size(4,4))).toBe(true);
+    });
+
+    it("should create a map with a specified size", function() {
+        var size = new Size(5,5);
+        var map = new Map(size);
+        expect(map.getSize().equalsTo(size)).toBe(true);
+    });
+
+    // it("should", function () {
+       //todo next test
+    // });
 });
