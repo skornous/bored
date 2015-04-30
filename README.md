@@ -1,4 +1,4 @@
-Bored
+Bored [![Build Status](https://travis-ci.org/skornous/bored.svg?branch=master)](https://travis-ci.org/skornous/bored)
 ===
 A little js game project based on some rooms in the legend of zelda's game serie
 
