@@ -21,5 +21,5 @@ function Size(width, height) {
 	self.getWidth = function(){ return self._width; };
 	self.getHeigth = function(){ return self._height; };
 
-	self.getDimension = function() {;return this; };
+	self.getDimension = function() { ;return this; };
 }
