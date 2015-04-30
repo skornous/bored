@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         options: {
           spawn: false,
           livereload: true
-        },
+        }
       },
       css: {
         files: [dev + '*.css'],
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         options: {
           spawn: false,
           livereload: true
-        },
+        }
       },
       html: {
         files: [dev + "*.html"],
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
     karma: {
       unit: {
         configFile: 'karma.conf.js',
-        background: true
+        singleRun: true
       }
     }
   });
@@ -85,10 +85,12 @@ module.exports = function(grunt) {
   grunt.registerTask('scriptUp', ['testScripts', 'uglify']);
   grunt.registerTask('styleUp', ['testStyles', 'cssmin']);
 
-  grunt.registerTask('testScripts', ['jshint', 'karma:unit:run']);
+  grunt.registerTask('testScripts', ['jshint', 'karma']);
   grunt.registerTask('testStyles', []);
 
   grunt.registerTask('build', ['styleUp', 'scriptUp', 'htmlmin:dist']);
   grunt.registerTask('dev', ['styleUp', 'scriptUp', 'htmlmin:dev']);
   grunt.registerTask('default', ['build']);
+
+  grunt.registerTask('test', ['testStyles', 'testScripts']);
 };

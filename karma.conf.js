@@ -62,9 +62,17 @@ module.exports = function(config) {
       // 'IE'
     ],
 
+    // Which plugins to enable
+    plugins: [
+      "karma-phantomjs-launcher",
+      // "karma-chrome-launcher",
+      // "karma-firefox-launcher",
+      // "karma-ie-launcher",
+      "karma-jasmine"
+    ],
 
     // Continuous Integration mode
-    // if true, Karma captures browsers, runs the tests and exits
+    // if true, it capture browsers, run tests and exit
     singleRun: false
 
   });

@@ -15,11 +15,16 @@ function Map() {
 function Size(width, height) {
 	var self = this;
 
-	self._width = 4;
-	self._height = 4;
+	self._width = width;
+	self._height = height;
 
 	self.getWidth = function(){ return self._width; };
 	self.getHeigth = function(){ return self._height; };
 
-	self.getDimension = function() { ;return this; };
+	self.getDimension = function() {
+		return {
+			w: self._width,
+			h: self._height
+		};
+	};
 }

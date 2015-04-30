@@ -4,7 +4,7 @@
   "description": "i'm bored so i'll write a little game to do something",
   "main": "dist/app.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "grunt test"
   },
   "keywords": [
     "bored"
