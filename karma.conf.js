@@ -27,13 +27,29 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'src/**/*.js': ['coverage']
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
+
+
+    coverageReporter: {
+      // specify a common output directory
+      dir: 'coverage',
+      reporters: [
+        // reporters not supporting the `file` property
+        { type: 'lcov', subdir: 'report-lcov' },
+        // reporters supporting the `file` property, use `subdir` to directly
+        // output them in the `dir` directory
+        { type: 'cobertura', subdir: '.', file: 'cobertura.txt' },
+        { type: 'teamcity', subdir: '.', file: 'teamcity.txt' },
+        { type: 'json', subdir: '.', file: 'coverage.json' }
+      ]
+    },
 
 
     // web server port
@@ -68,6 +84,7 @@ module.exports = function(config) {
       // "karma-chrome-launcher",
       // "karma-firefox-launcher",
       // "karma-ie-launcher",
+      'karma-coverage',
       "karma-jasmine"
     ],
 

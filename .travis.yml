@@ -5,4 +5,6 @@ node_js:
   - '0.12'
   - '0.10'
 before_script:
-  - 'npm install -g bower grunt-cli'
+  - 'npm install -g bower grunt-cli istanbul'
+after_script:
+  - 'CODECLIMATE_REPO_TOKEN=698494b24b2692634ec5f90626be9b4d1de0f27fc32b17b420fa1d24761b4497 codeclimate < coverage\report-lcov\lcov.info'

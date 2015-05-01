@@ -1,4 +1,4 @@
-Bored [![Build Status](https://travis-ci.org/skornous/bored.svg?branch=map)](https://travis-ci.org/skornous/bored) [![Code Climate](https://codeclimate.com/github/skornous/bored/badges/gpa.svg)](https://codeclimate.com/github/skornous/bored) [![Coverage Status](https://coveralls.io/repos/skornous/bored/badge.svg)](https://coveralls.io/r/skornous/bored)
+Bored [![Build Status](https://travis-ci.org/skornous/bored.svg?branch=map)](https://travis-ci.org/skornous/bored) [![Code Climate](https://codeclimate.com/github/skornous/bored/badges/gpa.svg)](https://codeclimate.com/github/skornous/bored) [![Test Coverage](https://codeclimate.com/github/skornous/bored/badges/coverage.svg)](https://codeclimate.com/github/skornous/bored) [![Coverage Status](https://coveralls.io/repos/skornous/bored/badge.svg)](https://coveralls.io/r/skornous/bored)
 ===
 A little js game project based on some rooms in the legend of zelda's game serie
 
