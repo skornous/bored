@@ -1,13 +1,3 @@
-// describe("A first jasmine test", function() {
-//   it("should pass", function() {
-//     expect(true).toBe(true);
-//   });
-
-//   it("should pass", function() {
-//    expect(true).not.toBe(false);
-//   });
-// });
-
 describe("Testing the Map object", function() {
 
     it("should create a map with a default size of (4, 4)", function(){
